@@ -3,4 +3,15 @@ Isla de Chiloé;Cultural;62000
 Crucero Lagos;Navegacion;95000
 Gastronomía Local;Gastronomico;48000
 Saltos del Petrohué;Naturaleza;30000
-Tour Frutillar Colonial;Cultural;45000
+Ruta de los Volcanes;Aventura;85000
+Isla de Chiloé;Cultural;62000
+Sabores del Sur;Gastronomico;45000
+Lago Llanquihue;Naturaleza;35000
+Sendero Osorno;Aventura;70000
+Patrimonio de Frutillar;Cultural;40000
+Degustación Puerto Varas;Gastronomico;55000
+Saltos del Petrohué;Naturaleza;50000
+Trekking Volcán Calbuco;Aventura;90000
+Museos de Puerto Montt;Cultural;30000
+Ruta de Cervezas Artesanales;Gastronomico;48000
+Parque Vicente Pérez Rosales;Naturaleza;60000
