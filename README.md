@@ -4,6 +4,7 @@ Descripción.
 LlanquihueTourApp es una aplicación desarrollada en Java utilizando Programación Orientada a Objetos (POO). El sistema permite cargar información de tours turísticos desde un archivo de texto, almacenarlos en una colección ArrayList y realizar consultas según distintos criterios, como tipo de tour o precio.
 
 Estructura de Carpetas
+```text
 LlanquihueTourApp
 │
 ├── resources
@@ -20,6 +21,7 @@ LlanquihueTourApp
 │       └── Main.java
 │
 └── README.md
+```
 
 
 Descripción de carpetas.
