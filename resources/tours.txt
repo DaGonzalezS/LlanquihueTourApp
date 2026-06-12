@@ -1,0 +1,6 @@
+Ruta de los Volcanes;Aventura;85000
+Isla de Chiloé;Cultural;62000
+Crucero Lagos;Navegacion;95000
+Gastronomía Local;Gastronomico;48000
+Saltos del Petrohué;Naturaleza;30000
+Tour Frutillar Colonial;Cultural;45000
