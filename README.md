@@ -45,11 +45,11 @@ Funcionalidades
 
 
 Instrucciones de Ejecución.
-- Abrir el proyecto en IntelliJ IDEA.
-- Verificar que el archivo tours.txt se encuentre dentro de la carpeta resources.
-- Ejecutar la clase Main.java ubicada en:
+1. Abrir el proyecto en IntelliJ IDEA.
+2. Verificar que el archivo tours.txt se encuentre dentro de la carpeta resources.
+3. Ejecutar la clase Main.java ubicada en:
 src/ui/Main.java
-- El programa cargará los tours desde el archivo de texto y mostrará la información solicitada en consola.
+4. El programa cargará los tours desde el archivo de texto y mostrará la información solicitada en consola.
 
 
 Tecnologías Utilizadas.
