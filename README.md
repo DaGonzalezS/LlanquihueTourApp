@@ -28,28 +28,28 @@ LlanquihueTourApp
 
 
 Descripción de carpetas.
-resources/: contiene los archivos de datos utilizados por la aplicación.
-data/: contiene las clases encargadas de la lectura y gestión de datos.
-model/: contiene las clases del modelo de negocio (Tour y Guia).
-ui/: contiene la clase principal de ejecución del programa.
+- resources/: contiene los archivos de datos utilizados por la aplicación.
+- data/: contiene las clases encargadas de la lectura y gestión de datos.
+- model/: contiene las clases del modelo de negocio (Tour y Guia).
+- ui/: contiene la clase principal de ejecución del programa.
 
 
 Funcionalidades
-Lectura de tours desde un archivo TXT.
-Almacenamiento de datos en un ArrayList.
-Asociación de un guía turístico a cada tour.
-Consulta de tours por categoría.
-Consulta de tours económicos.
-Validación básica de datos.
-Manejo de excepciones mediante try-catch.
+- Lectura de tours desde un archivo TXT.
+- Almacenamiento de datos en un ArrayList.
+- Asociación de un guía turístico a cada tour.
+- Consulta de tours por categoría.
+- Consulta de tours económicos.
+- Validación básica de datos.
+- Manejo de excepciones mediante try-catch.
 
 
 Instrucciones de Ejecución.
-Abrir el proyecto en IntelliJ IDEA.
-Verificar que el archivo tours.txt se encuentre dentro de la carpeta resources.
-Ejecutar la clase Main.java ubicada en:
+- Abrir el proyecto en IntelliJ IDEA.
+- Verificar que el archivo tours.txt se encuentre dentro de la carpeta resources.
+- Ejecutar la clase Main.java ubicada en:
 src/ui/Main.java
-El programa cargará los tours desde el archivo de texto y mostrará la información solicitada en consola.
+- El programa cargará los tours desde el archivo de texto y mostrará la información solicitada en consola.
 
 
 Tecnologías Utilizadas.
