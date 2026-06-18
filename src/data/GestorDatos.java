@@ -1,6 +1,7 @@
 package data;
 
 import model.Tour;
+import model.Guia;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -24,11 +25,20 @@ public class GestorDatos {
 
                 String[] datos = linea.split(";");
 
+                if (datos.length < 5) {
+                    System.out.println("Línea incompleta.");
+                    continue;
+                }
+
                 String nombre = datos[0];
                 String tipo = datos[1];
                 double precio = Double.parseDouble(datos[2]);
+                String nombreGuia = datos[3];
+                String especialidad = datos[4];
 
-                Tour tour = new Tour(nombre, tipo, precio);
+                Guia guia = new Guia(nombreGuia, especialidad);
+
+                Tour tour = new Tour(nombre, tipo, precio, guia);
 
                 listaTours.add(tour);
             }
@@ -37,6 +47,8 @@ public class GestorDatos {
 
         } catch (FileNotFoundException e) {
             System.out.println("Archivo no encontrado.");
+        } catch (NumberFormatException e) {
+            System.out.println("Precio inválido en el archivo.");
         }
 
         return listaTours;

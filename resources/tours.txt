@@ -1,17 +1,17 @@
-Ruta de los Volcanes;Aventura;85000
-Isla de Chiloé;Cultural;62000
-Crucero Lagos;Navegacion;95000
-Gastronomía Local;Gastronomico;48000
-Saltos del Petrohué;Naturaleza;30000
-Ruta de los Volcanes;Aventura;85000
-Isla de Chiloé;Cultural;62000
-Sabores del Sur;Gastronomico;45000
-Lago Llanquihue;Naturaleza;35000
-Sendero Osorno;Aventura;70000
-Patrimonio de Frutillar;Cultural;40000
-Degustación Puerto Varas;Gastronomico;55000
-Saltos del Petrohué;Naturaleza;50000
-Trekking Volcán Calbuco;Aventura;90000
-Museos de Puerto Montt;Cultural;30000
-Ruta de Cervezas Artesanales;Gastronomico;48000
-Parque Vicente Pérez Rosales;Naturaleza;60000
+Ruta de los Volcanes;Aventura;85000;Carlos Muñoz;Turismo de Aventura
+Isla de Chiloé;Cultural;62000;María Soto;Patrimonio Cultural
+Crucero Lagos;Navegacion;95000;Pedro Vargas;Turismo Náutico
+Gastronomía Local;Gastronomico;48000;Camila Torres;Gastronomía Regional
+Saltos del Petrohué;Naturaleza;30000;José Herrera;Ecoturismo
+Ruta de los Volcanes;Aventura;85000;Carlos Muñoz;Turismo de Aventura
+Isla de Chiloé;Cultural;62000;María Soto;Patrimonio Cultural
+Sabores del Sur;Gastronomico;45000;Camila Torres;Gastronomía Regional
+Lago Llanquihue;Naturaleza;35000;Ana González;Turismo de Naturaleza
+Sendero Osorno;Aventura;70000;Diego Rojas;Montañismo y Trekking
+Patrimonio de Frutillar;Cultural;40000;María Soto;Patrimonio Cultural
+Degustación Puerto Varas;Gastronomico;55000;Camila Torres;Gastronomía Regional
+Saltos del Petrohué;Naturaleza;50000;José Herrera;Ecoturismo
+Trekking Volcán Calbuco;Aventura;90000;Diego Rojas;Montañismo y Trekking
+Museos de Puerto Montt;Cultural;30000;Ricardo Pérez;Historia Regional
+Ruta de Cervezas Artesanales;Gastronomico;48000;Camila Torres;Gastronomía Regional
+Parque Vicente Pérez Rosales;Naturaleza;36000;Ana González;Turismo de Naturaleza
