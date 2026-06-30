@@ -1,51 +1,14 @@
 package ui;
 
-import data.GestorDatos;
-import model.Tour;
-
-import java.util.ArrayList;
+import data.GestorServicios;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        GestorDatos gestor = new GestorDatos();
+        GestorServicios gestor = new GestorServicios();
 
-        ArrayList<Tour> tours = gestor.leerTours();
+        gestor.crearServicios();
 
-        System.out.println("LISTA DE TOURS");
-        System.out.println("----------------");
-
-        for (Tour tour : tours) {
-            System.out.println(tour);
-        }
-
-        System.out.println("\nTOURS GASTRONOMICOS");
-        System.out.println("-------------------");
-
-        for (Tour tour : tours) {
-
-            if (tour.getTipo().equalsIgnoreCase("Gastronomico")) {
-                System.out.println(tour);
-            }
-        }
-
-        System.out.println("\nTOURS DE AVENTURA");
-        System.out.println("-------------------");
-
-        for (Tour tour : tours) {
-            if (tour.getTipo().equalsIgnoreCase("Aventura")) {
-                System.out.println(tour);
-            }
-        }
-
-        System.out.println("\nTOURS ECONOMICOS (Precio menor o igual a $40.000)");
-        System.out.println("-------------------");
-
-        for (Tour tour : tours) {
-            if (tour.getPrecio() <= 40000) {
-                System.out.println(tour);
-            }
-        }
     }
 }

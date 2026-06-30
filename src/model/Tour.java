@@ -1,6 +1,6 @@
 package model;
 
-public class Tour {
+public class Tour{
 
     private String nombre;
     private String tipo;
