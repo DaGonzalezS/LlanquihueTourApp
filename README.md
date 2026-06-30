@@ -1,60 +1,41 @@
-LlanquihueTourApp.
+# LlanquihueTour
 
-Descripción.
-LlanquihueTourApp es una aplicación desarrollada en Java utilizando Programación Orientada a Objetos (POO). El sistema permite cargar información de tours turísticos desde un archivo de texto, almacenarlos en una colección ArrayList y realizar consultas según distintos criterios, como tipo de tour o precio.
+## Descripción
 
-Además, cada tour posee un guía turístico asociado, implementando composición entre clases mediante la relación entre Tour y Guia.
+Proyecto desarrollado para la asignatura Desarrollo Orientado a Objetos I.
 
-Estructura de Carpetas
-```text
-LlanquihueTourApp
-│
-├── resources
-│   └── tours.txt
-│
-├── src
-│   ├── data
-│   │   └── GestorDatos.java
-│   │
-│   ├── model
-│   │   └── Tour.java
-│   │   └── Guia.java
-│   │
-│   └── ui
-│       └── Main.java
-│
-└── README.md
+En esta sexta semana se implementó una jerarquía de clases utilizando herencia simple para representar distintos servicios turísticos de la agencia Llanquihue Tour.
+
+## Clases creadas
+
+- ServicioTuristico
+- RutaGastronomica
+- PaseoLacustre
+- ExcursionCultural
+- GestorServicios
+- Main
+
+## Estructura del proyecto
+
+```
+src
+├── data
+│   └── GestorServicios.java
+├── model
+│   ├── ServicioTuristico.java
+│   ├── RutaGastronomica.java
+│   ├── PaseoLacustre.java
+│   └── ExcursionCultural.java
+└── ui
+    └── Main.java
 ```
 
+## Cómo ejecutar
 
-Descripción de carpetas.
-- resources/: contiene los archivos de datos utilizados por la aplicación.
-- data/: contiene las clases encargadas de la lectura y gestión de datos.
-- model/: contiene las clases del modelo de negocio (Tour y Guia).
-- ui/: contiene la clase principal de ejecución del programa.
-
-
-Funcionalidades
-- Lectura de tours desde un archivo TXT.
-- Almacenamiento de datos en un ArrayList.
-- Asociación de un guía turístico a cada tour.
-- Consulta de tours por categoría.
-- Consulta de tours económicos.
-- Validación básica de datos.
-- Manejo de excepciones mediante try-catch.
-
-
-Instrucciones de Ejecución.
 1. Abrir el proyecto en IntelliJ IDEA.
-2. Verificar que el archivo tours.txt se encuentre dentro de la carpeta resources.
-3. Ejecutar la clase Main.java ubicada en:
-src/ui/Main.java
-4. El programa cargará los tours desde el archivo de texto y mostrará la información solicitada en consola.
+2. Ejecutar la clase `Main` ubicada en el paquete `ui`.
+3. El programa mostrará por consola dos instancias de cada tipo de servicio turístico.
 
+## Autor
 
-Tecnologías Utilizadas.
-- Java
-- Programación Orientada a Objetos (POO)
-- ArrayList
-- Lectura de archivos TXT
-- IntelliJ IDEA
+Daniel González
