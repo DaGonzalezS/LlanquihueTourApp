@@ -4,7 +4,11 @@
 
 Proyecto desarrollado para la asignatura Desarrollo Orientado a Objetos I.
 
-En esta sexta semana se implementó una jerarquía de clases utilizando herencia simple para representar distintos servicios turísticos de la agencia Llanquihue Tour.
+El sistema modela una agencia de turismo que gestiona distintos tipos de servicios turísticos en la región de Llanquihue. Se implementa una jerarquía de clases utilizando herencia simple, aplicando conceptos de Programación Orientada a Objetos como encapsulación, herencia y polimorfismo.
+
+En esta séptima semana el proyecto implementa polimorfismo a través de la sobrescritura del método mostrarInformacion() en las clases hijas, lo que permite tratar distintos tipos de servicios turísticos de manera uniforme.
+
+Asimismo, se utiliza una colección List<ServicioTuristico> para almacenar objetos de diferentes subclases, aprovechando el polimorfismo en tiempo de ejecución.
 
 ## Clases creadas
 
@@ -29,6 +33,14 @@ src
 └── ui
     └── Main.java
 ```
+
+## Funcionamiento
+
+- Se crea un gestor de servicios (GestorServicios)
+- Se instancian distintos tipos de servicios turísticos
+- Se almacenan en una lista de tipo ServicioTuristico
+- Se recorren utilizando polimorfismo
+- Se muestra la información de cada servicio en consola
 
 ## Cómo ejecutar
 
