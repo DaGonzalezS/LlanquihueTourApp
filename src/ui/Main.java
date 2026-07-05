@@ -1,6 +1,7 @@
 package ui;
 
 import data.GestorServicios;
+import model.ServicioTuristico;
 
 public class Main {
 
@@ -10,5 +11,9 @@ public class Main {
 
         gestor.crearServicios();
 
+        for (ServicioTuristico servicio : gestor.obtenerServicios()) {
+            servicio.mostrarInformacion();
+            System.out.println("-------------------------");
+        }
     }
 }
