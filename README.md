@@ -6,11 +6,11 @@ Proyecto desarrollado para la asignatura Desarrollo Orientado a Objetos I.
 
 El sistema modela una agencia de turismo que gestiona distintos tipos de servicios turísticos en la región de Llanquihue. Se implementa una jerarquía de clases utilizando herencia simple, aplicando conceptos de Programación Orientada a Objetos como encapsulación, herencia y polimorfismo.
 
-En esta séptima semana el proyecto implementa polimorfismo a través de la sobrescritura del método mostrarInformacion() en las clases hijas, lo que permite tratar distintos tipos de servicios turísticos de manera uniforme.
+En esta versión se implementa el polimorfismo mediante la sobrescritura del método mostrarInformacion() en las clases derivadas de ServicioTuristico. Esto permite que distintos tipos de servicios sean tratados de forma uniforme utilizando referencias de la clase base.
 
-Asimismo, se utiliza una colección List<ServicioTuristico> para almacenar objetos de diferentes subclases, aprovechando el polimorfismo en tiempo de ejecución.
+Además, se utiliza una colección List<ServicioTuristico> para almacenar objetos pertenecientes a distintas subclases. Gracias al polimorfismo en tiempo de ejecución, cada objeto ejecuta su propia implementación del método mostrarInformacion().
 
-## Clases creadas
+## Organización de clases 
 
 - ServicioTuristico
 - RutaGastronomica
