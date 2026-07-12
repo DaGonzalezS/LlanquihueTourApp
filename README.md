@@ -16,6 +16,8 @@ Gestión de entidades mediante una colección ArrayList.
 Aplicación de polimorfismo utilizando una interfaz común.
 Identificación de tipos de objetos con instanceof.
 Interfaz gráfica básica desarrollada con JOptionPane.
+
+´´´
 Estructura del proyecto
 src
 │
@@ -32,6 +34,8 @@ src
 │
 └── ui
     └── Main.java
+´´´
+
 Clases e interfaces utilizadas
 Interface
 Registrable: define el método mostrarResumen(), implementado por las entidades del sistema.
