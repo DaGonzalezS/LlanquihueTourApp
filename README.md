@@ -60,7 +60,7 @@ src
 - Validación de tipos mediante instanceof.
 - Interfaz gráfica con JOptionPane.
 
-##Cómo ejecutar el proyecto
+## Cómo ejecutar el proyecto
 1. Abrir el proyecto en IntelliJ IDEA.
 2. Ejecutar la clase Main ubicada en el paquete ui.
 3. Utilizar el menú para registrar guías, vehículos y colaboradores externos.
