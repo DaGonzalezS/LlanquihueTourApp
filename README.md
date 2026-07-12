@@ -1,53 +1,59 @@
-# LlanquihueTour
-
-## Descripción
+LlanquihueTourApp
+Descripción
 
 Proyecto desarrollado para la asignatura Desarrollo Orientado a Objetos I.
 
-El sistema modela una agencia de turismo que gestiona distintos tipos de servicios turísticos en la región de Llanquihue. Se implementa una jerarquía de clases utilizando herencia simple, aplicando conceptos de Programación Orientada a Objetos como encapsulación, herencia y polimorfismo.
+Esta versión del sistema incorpora conceptos fundamentales de la Programación Orientada a Objetos, como interfaces, herencia, polimorfismo, colecciones dinámicas e interfaz gráfica, permitiendo registrar y visualizar distintas entidades relacionadas con la agencia de turismo Llanquihue Tour.
 
-En esta versión se implementa el polimorfismo mediante la sobrescritura del método mostrarInformacion() en las clases derivadas de ServicioTuristico. Esto permite que distintos tipos de servicios sean tratados de forma uniforme utilizando referencias de la clase base.
+El programa permite registrar guías, vehículos y colaboradores externos mediante una interfaz gráfica desarrollada con JOptionPane, almacenando la información en una colección dinámica y diferenciando los objetos mediante el operador instanceof.
 
-Además, se utiliza una colección List<ServicioTuristico> para almacenar objetos pertenecientes a distintas subclases. Gracias al polimorfismo en tiempo de ejecución, cada objeto ejecuta su propia implementación del método mostrarInformacion().
-
-## Organización de clases 
-
-- ServicioTuristico
-- RutaGastronomica
-- PaseoLacustre
-- ExcursionCultural
-- GestorServicios
-- Main
-
-## Estructura del proyecto
-
-```
+Funcionalidades
+Registro de guías turísticos.
+Registro de vehículos.
+Registro de colaboradores externos.
+Visualización de las entidades registradas.
+Gestión de entidades mediante una colección ArrayList.
+Aplicación de polimorfismo utilizando una interfaz común.
+Identificación de tipos de objetos con instanceof.
+Interfaz gráfica básica desarrollada con JOptionPane.
+Estructura del proyecto
 src
-├── data
-│   └── GestorServicios.java
+│
 ├── model
-│   ├── ServicioTuristico.java
-│   ├── RutaGastronomica.java
-│   ├── PaseoLacustre.java
-│   └── ExcursionCultural.java
+│   ├── Registrable.java
+│   ├── Persona.java
+│   ├── Guia.java
+│   ├── Vehiculo.java
+│   └── ColaboradorExterno.java
+│
+├── data
+│   ├── GestorDatos.java
+│   └── GestorEntidades.java
+│
 └── ui
     └── Main.java
-```
-
-## Funcionamiento
-
-- Se crea un gestor de servicios (GestorServicios)
-- Se instancian distintos tipos de servicios turísticos
-- Se almacenan en una lista de tipo ServicioTuristico
-- Se recorren utilizando polimorfismo
-- Se muestra la información de cada servicio en consola
-
-## Cómo ejecutar
-
-1. Abrir el proyecto en IntelliJ IDEA.
-2. Ejecutar la clase `Main` ubicada en el paquete `ui`.
-3. El programa mostrará por consola dos instancias de cada tipo de servicio turístico.
-
-## Autor
-
-Daniel González
+Clases e interfaces utilizadas
+Interface
+Registrable: define el método mostrarResumen(), implementado por las entidades del sistema.
+Clases
+Persona: superclase que contiene los atributos comunes de las personas.
+Guia: representa un guía turístico y hereda de Persona.
+ColaboradorExterno: representa un colaborador externo y hereda de Persona.
+Vehiculo: representa un vehículo de la agencia.
+GestorDatos: administra la lectura de datos desde el archivo correspondiente.
+GestorEntidades: administra una colección dinámica de entidades registrables.
+Main: contiene la interfaz gráfica y controla la ejecución del programa.
+Conceptos aplicados
+Programación Orientada a Objetos.
+Herencia.
+Interfaces.
+Polimorfismo.
+Sobrescritura de métodos (@Override).
+Colecciones dinámicas (ArrayList).
+Validación de tipos mediante instanceof.
+Interfaz gráfica con JOptionPane.
+Cómo ejecutar el proyecto
+Abrir el proyecto en IntelliJ IDEA.
+Ejecutar la clase Main ubicada en el paquete ui.
+Utilizar el menú para registrar guías, vehículos y colaboradores externos.
+Seleccionar la opción Mostrar Entidades para visualizar los registros ingresados.
