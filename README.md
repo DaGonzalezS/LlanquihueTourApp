@@ -3,15 +3,15 @@
 ## Descripción
 Proyecto desarrollado para la Evaluación Final Transversal (EFT) de la asignatura **Desarrollo Orientado a Objetos I**. Esta versión del sistema incorpora los conceptos fundamentales de la Programación Orientada a Objetos (POO) y añade una capa de persistencia en archivos planos locales, permitiendo registrar, administrar y almacenar de manera permanente las distintas entidades que interactúan en la agencia de turismo Llanquihue Tour.
 
-El programa cuenta con un menú interactivo por consola que permite realizar el registro validado de Clientes, Guías y Proveedores, resguardando la información en una colección dinámica y asegurando su persistencia en el disco[cite: 1, 2, 10].
+El programa cuenta con un menú interactivo por consola que permite realizar el registro validado de Clientes, Guías y Proveedores, resguardando la información en una colección dinámica y asegurando su persistencia en el disco.
 
 ## Funcionalidades
-* **Registro de Clientes:** Permite ingresar datos personales, dirección y correo electrónico[cite: 4, 10].
-* **Registro de Guías Turísticos:** Permite registrar guías asociando su especialidad dentro de la agencia[cite: 6, 10].
-* **Registro de Proveedores:** Permite la administración de operadores y empresas externas asociadas[cite: 8, 10].
-* **Validación de Datos de Negocio:** Control de integridad en la capa de negocio que valida la extensión mínima del RUT antes de confirmar cualquier registro[cite: 9, 10, 11].
-* **Persistencia en Archivos Locales (.txt):** Escritura y lectura automatizada de datos a través de flujos de caracteres, permitiendo recuperar la información cada vez que se inicia la aplicación[cite: 1, 11].
-* **Visualización Unificada:** Reporte estructurado de todos los registros del sistema mediante el uso de polimorfismo[cite: 2, 10, 11].
+* **Registro de Clientes:** Permite ingresar datos personales, dirección y correo electrónico.
+* **Registro de Guías Turísticos:** Permite registrar guías asociando su especialidad dentro de la agencia.
+* **Registro de Proveedores:** Permite la administración de operadores y empresas externas asociadas.
+* **Validación de Datos de Negocio:** Control de integridad en la capa de negocio que valida la extensión mínima del RUT antes de confirmar cualquier registro.
+* **Persistencia en Archivos Locales (.txt):** Escritura y lectura automatizada de datos a través de flujos de caracteres, permitiendo recuperar la información cada vez que se inicia la aplicación.
+* **Visualización Unificada:** Reporte estructurado de todos los registros del sistema mediante el uso de polimorfismo.
 
 ## Estructura del Proyecto (Paquetes)
 ```text
