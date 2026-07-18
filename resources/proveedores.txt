@@ -1,0 +1,2 @@
+Luis Rojas;45;18.888.888-8;Avenida Sur 45;Osorno;Transportes Sur
+Marcela Pérez;39;19.999.999-9;Los Copihues 77;Puerto Varas;Hotel Lago Azul

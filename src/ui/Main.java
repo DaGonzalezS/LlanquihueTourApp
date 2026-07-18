@@ -1,91 +1,174 @@
 package ui;
 
-import data.GestorEntidades;
-import model.ColaboradorExterno;
-import model.Guia;
-import model.Vehiculo;
+import data.GestorDatos;
+import data.GestorPersonas;
+import model.*;
 
-import javax.swing.*;
-
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        GestorEntidades gestor = new GestorEntidades();
-
-        String[] opciones = {
-                "Agregar Guía",
-                "Agregar Vehículo",
-                "Agregar Colaborador",
-                "Mostrar Entidades",
-                "Salir"
-        };
+        Scanner sc = new Scanner(System.in);
+        GestorPersonas gestor = new GestorPersonas();
 
         int opcion;
 
         do {
 
-            opcion = JOptionPane.showOptionDialog(
-                    null,
-                    "Seleccione una opción",
-                    "Llanquihue Tour",
-                    JOptionPane.DEFAULT_OPTION,
-                    JOptionPane.INFORMATION_MESSAGE,
-                    null,
-                    opciones,
-                    opciones[0]
-            );
+            System.out.println("\n===== LLANQUIHUE TOUR =====");
+            System.out.println("1. Registrar Cliente");
+            System.out.println("2. Registrar Guía");
+            System.out.println("3. Registrar Proveedor");
+            System.out.println("4. Mostrar Personas");
+            System.out.println("5. Salir");
+            System.out.print("Seleccione una opción: ");
+
+            opcion = sc.nextInt();
+            sc.nextLine();
 
             switch (opcion) {
 
-                case 0: {
+                case 1:
 
-                    String nombre = JOptionPane.showInputDialog("Nombre:");
-                    String cargo = JOptionPane.showInputDialog("Cargo:");
-                    String especialidad = JOptionPane.showInputDialog("Especialidad:");
+                    System.out.print("Nombre: ");
+                    String nombre = sc.nextLine();
 
-                    gestor.agregarEntidad(
-                            new Guia(nombre, cargo, especialidad)
+                    System.out.print("Edad: ");
+                    int edad = sc.nextInt();
+                    sc.nextLine();
+
+                    System.out.print("Rut (mínimo 8 caracteres): ");
+                    String rut = sc.nextLine();
+
+                    if (!Rut.esValido(rut)) {
+                        System.out.println("\n[ERROR]: El RUT ingresado no es válido (Debe tener mínimo 8 caracteres).");
+                        System.out.println("Registro cancelado.");
+                        break;
+                    }
+
+                    System.out.print("Calle: ");
+                    String calle = sc.nextLine();
+
+                    System.out.print("Ciudad: ");
+                    String ciudad = sc.nextLine();
+
+                    System.out.print("Correo: ");
+                    String correo = sc.nextLine();
+
+                    Cliente cliente = new Cliente(
+                            nombre,
+                            edad,
+                            new Rut(rut),
+                            new Direccion(calle, ciudad),
+                            correo
                     );
-                    JOptionPane.showMessageDialog(null, "Guía registrado correctamente.");
+
+                    GestorDatos.guardarCliente(cliente);
+                    System.out.println("\nCliente registrado correctamente.");
                     break;
-                }
 
-                case 1: {
-                    String modelo = JOptionPane.showInputDialog("Modelo:");
+                case 2:
 
-                    String patente = JOptionPane.showInputDialog("Patente:");
+                    System.out.print("Nombre: ");
+                    nombre = sc.nextLine();
 
-                    gestor.agregarEntidad(
-                            new Vehiculo(modelo, patente)
+                    System.out.print("Edad: ");
+                    edad = sc.nextInt();
+                    sc.nextLine();
+
+                    System.out.print("Rut (mínimo 8 caracteres): ");
+                    rut = sc.nextLine();
+
+                    if (!Rut.esValido(rut)) {
+                        System.out.println("\n[ERROR]: El RUT ingresado no es válido (Debe tener mínimo 8 caracteres).");
+                        System.out.println("Registro cancelado.");
+                        break;
+                    }
+
+                    System.out.print("Calle: ");
+                    calle = sc.nextLine();
+
+                    System.out.print("Ciudad: ");
+                    ciudad = sc.nextLine();
+
+                    System.out.print("Especialidad: ");
+                    String especialidad = sc.nextLine();
+
+                    Guia guia = new Guia(
+                            nombre,
+                            edad,
+                            new Rut(rut),
+                            new Direccion(calle, ciudad),
+                            especialidad
                     );
-                    JOptionPane.showMessageDialog(null, "Vehículo registrado correctamente.");
+
+                    GestorDatos.guardarGuia(guia);
+                    System.out.println("\nGuía registrada correctamente.");
                     break;
-                }
 
-                case 2: {
+                case 3:
 
-                    String nombre = JOptionPane.showInputDialog("Nombre:");
-                    String cargo = JOptionPane.showInputDialog("Cargo:");
-                    String empresa = JOptionPane.showInputDialog("Empresa:");
+                    System.out.print("Nombre: ");
+                    nombre = sc.nextLine();
 
-                    gestor.agregarEntidad(
-                            new ColaboradorExterno(nombre, cargo, empresa)
+                    System.out.print("Edad: ");
+                    edad = sc.nextInt();
+                    sc.nextLine();
+
+                    System.out.print("Rut (mínimo 8 caracteres): ");
+                    rut = sc.nextLine();
+
+                    if (!Rut.esValido(rut)) {
+                        System.out.println("\n[ERROR]: El RUT ingresado no es válido (Debe tener mínimo 8 caracteres).");
+                        System.out.println("Registro cancelado.");
+                        break;
+                    }
+
+                    System.out.print("Calle: ");
+                    calle = sc.nextLine();
+
+                    System.out.print("Ciudad: ");
+                    ciudad = sc.nextLine();
+
+                    System.out.print("Empresa: ");
+                    String empresa = sc.nextLine();
+
+                    Proveedor proveedor = new Proveedor(
+                            nombre,
+                            edad,
+                            new Rut(rut),
+                            new Direccion(calle, ciudad),
+                            empresa
                     );
-                    JOptionPane.showMessageDialog(null, "Colaborador externo registrado correctamente.");
-                    break;
-                }
 
-                case 3: {
-                    JOptionPane.showMessageDialog(
-                            null,
-                            gestor.mostrarEntidades()
-                    );
+                    GestorDatos.guardarProveedor(proveedor);
+                    System.out.println("\nProveedor registrado correctamente.");
                     break;
-                }
+
+                case 4:
+
+                    gestor.limpiarPersonas();
+
+                    GestorDatos.cargarClientes(gestor);
+                    GestorDatos.cargarGuias(gestor);
+                    GestorDatos.cargarProveedores(gestor);
+
+                    System.out.println(gestor.mostrarPersonas());
+                    break;
+
+                case 5:
+
+                    System.out.println("Programa finalizado.");
+                    break;
+
+                default:
+                    System.out.println("Opción inválida.");
             }
 
-        } while (opcion != 4 && opcion != -1);
+        } while (opcion != 5);
+
+        sc.close();
     }
 }
