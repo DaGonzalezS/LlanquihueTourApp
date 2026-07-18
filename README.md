@@ -1,4 +1,4 @@
-# Llanquihue Tour - Prototipo de Gestión Modular
+# Llanquihue Tour
 
 ## Descripción
 Proyecto desarrollado para la Evaluación Final Transversal (EFT) de la asignatura **Desarrollo Orientado a Objetos I**. Esta versión del sistema incorpora los conceptos fundamentales de la Programación Orientada a Objetos (POO) y añade una capa de persistencia en archivos planos locales, permitiendo registrar, administrar y almacenar de manera permanente las distintas entidades que interactúan en la agencia de turismo Llanquihue Tour.
